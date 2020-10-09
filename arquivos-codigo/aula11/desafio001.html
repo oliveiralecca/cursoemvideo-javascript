@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Departamento de Imigração</title>
+
+   <style>
+      div#res {
+         margin-top: 30px;
+         border: solid 1px;
+         padding: 10px;
+         text-align: center;
+      }
+   </style>
+</head>
+<body>
+   <h1>Situação do suposto cidadão</h1>
+   País de nascimento: <input type="text" name="txtpais" id="txtpais">
+   <input type="button" id="verificar" value="Verificar" onclick="nacionalidade()">
+   <div id="res">
+      ...
+   </div>
+
+   <script>
+      document.addEventListener('keydown', function(e) {
+         if (e.key == 'Enter') {
+            window.document.getElementById('verificar').click()
+         }
+      })
+      
+      function nacionalidade() {
+         var pais = window.document.querySelector('input#txtpais').value.toUpperCase()
+         var res = window.document.querySelector('div#res')
+         if (pais == 'BRASIL') {
+            res.innerHTML = `Já que você nasceu no(a) ${pais}, você é <strong style="color: green">Brasileiro(a)</strong>!`
+         } else {
+            res.innerHTML = `Já que você nasceu no(a) ${pais}, você é <strong style="color: red">Estrangeiro(a)!</strong>`
+         }
+      }
+      
+   </script>
+</body>
+</html>
