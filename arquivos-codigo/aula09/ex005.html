@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros passos com DOM</title>
-    <style>
-        body {
-            background: rgb(68, 125, 199);
-            color: white;
-            font: normal 18pt Arial;
-        }
-    </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Primeiros passos com DOM</title>
+   <style>
+      body {
+         background: rgb(68, 125, 199);
+         color: white;
+         font: normal 18pt Arial;
+      }
+   </style>
 </head>
 <body>
    <h1>Iniciando estudos com DOM</h1> 
@@ -20,32 +20,32 @@
    <div name="msg">Clique em mim 2</div>
    <div class="msg">Clique em mim 3</div><br>
    <script>
-       var corpo = window.document.body
-       var p1 = window.document.getElementsByTagName('p')[1]
-       window.document.write('Está escrito assim: ' + p1.innerText)
+      var corpo = window.document.body
+      var p1 = window.document.getElementsByTagName('p')[1]
+      window.document.write('Está escrito assim: ' + p1.innerText)
 
-       // document.write(p1.innerHTML) -> DESSA FORMA, A TAG FILHA <strong> TAMBÉM É REPRESENTADA
-       // corpo.style.background = 'black'
-       // p1.style.color = 'blue'
+      // document.write(p1.innerHTML) -> DESSA FORMA, A TAG FILHA <strong> TAMBÉM É REPRESENTADA
+      // corpo.style.background = 'black'
+      // p1.style.color = 'blue'
 
-       var d = window.document.getElementById('msg')
-       d.style.background = 'green'
+      var d = window.document.getElementById('msg')
+      d.style.background = 'green'
 
-       // d.innerText = 'Estou aguardando...'
-       // window.document.getElementById('msg').innerText = 'Olá!'
+      // d.innerText = 'Estou aguardando...'
+      // window.document.getElementById('msg').innerText = 'Olá!'
 
-       var d2 = window.document.getElementsByName('msg')[0]
-       d2.innerText = 'Olá!'
+      var d2 = window.document.getElementsByName('msg')[0]
+      d2.innerText = 'Olá!'
 
-       // no comments
+      // no comments
 
-       var d3 = window.document.getElementsByClassName('msg')[0]
-       d3.innerText = 'Tudo bem?'
+      var d3 = window.document.getElementsByClassName('msg')[0]
+      d3.innerText = 'Tudo bem?'
 
-       // no comments
+      // no comments
 
-       var d4 = window.document.querySelector('div#msg')
-       d4.style.color = 'blue'
+      var d4 = window.document.querySelector('div#msg')
+      d4.style.color = 'blue'
    </script>
 </body>
 </html>
