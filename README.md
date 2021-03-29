@@ -1,2 +1,2 @@
 # cursoemvideo-javascript
- Arquivos de imagem das aulas de JavaScript e ECMAScript, e códigos
+Image files and codes of JavaScript and ECMAScript classes.
